@@ -75,7 +75,7 @@ function validDay(day, index) {
 }
 
 function validMonth(month) {
-  if (month > 11) {
+  if (month > 11 || month < 0) {
     isValid = false;
     setError("Must be a valid month", "month-input");
   }

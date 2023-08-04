@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+:root {
+  --purple: #854dff;
+  --lightred: #ff5757;
+
+  --white: #ffffff;
+  --offwhite: #f0f0f0;
+  --lightgrey: #dbdbdb;
+  --smokeygrey: #716f6f;
+  --offblack: #141414;
+}
+
+#error-input {
+  border-color: var(--lightred);
+  color: var(--lightred);
+}
+
+#error-p {
+  margin-top: 5px;
+  font: italic normal 0.75rem 'Poppins';
+  color: var(--lightred);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightgrey);
+}
+
+main {
+  height: 35rem;
+  width: 50rem;
+  padding: 3rem;
+  border-radius: 15px 15px 150px 15px;
+  background-color: var(--white);
+}
+
+.age-input {
+  display: flex;
+  gap: 25px;
+}
+
+.age-input div {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+
+label {
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--smokeygrey);
+}
+
+input {
+  box-sizing: content-box;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid var(--lightgrey);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--offblack);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.btn-form {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  flex: 1;
+  border-top: 1px solid var(--lightgrey);
+}
+
+button {
+  box-sizing: content-box;
+  border: none;
+  background-color: var(--purple);
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+button:active {
+  background-color: var(--offblack);
+}
+
+img {
+  width: 2.5rem;
+}
+
+span {
+  color: var(--purple);
+}
+
+p {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 5.313rem;
+  line-height: 5.625rem;
+  color: var(--offblack);
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 10px;
+  }
+
+  main {
+    height: 40rem;
+    width: 95%;
+    padding: 3rem 2rem;
+  }
+
+  .age-input {
+    gap: 14px;
+    margin-bottom: 2.25rem;
+  }
+
+  .age-input div {
+    display: flex;
+    flex-direction: column;
+    width: 9.5rem;
+  }
+
+  input {
+    padding: 0.625rem 1.25rem;
+    font-size: 1.75rem;
+  }
+
+  .btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.75rem;
+  }
+
+  hr {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  button {
+    z-index: 1;
+  }
+
+  p {
+    font-size: 5.6rem;
+    line-height: 5.7rem;
+  }
+}

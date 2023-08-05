@@ -82,7 +82,7 @@ function validMonth(month) {
 }
 
 function validYear(year) {
-  if (year > date.getFullYear() && year > 1000) {
+  if (year > date.getFullYear()) {
     isValid = false;
     setError("Must be a valid year", "year-input");
   }
